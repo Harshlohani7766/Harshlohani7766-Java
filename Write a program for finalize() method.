@@ -1,0 +1,11 @@
+class Test {
+    protected void finalize() {
+        System.out.println("Object is being garbage collected");
+    }
+
+    public static void main(String[] args) {
+        Test obj = new Test();
+        obj = null; // Making object eligible for garbage collection
+        System.gc();
+    }
+}
