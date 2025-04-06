@@ -1,0 +1,20 @@
+// Java Program to demonstrate
+// Constructor
+import java.io.*;
+
+// Driver Class
+class Main {
+  
+    // Constructor
+    Main()
+    {
+        super();
+        System.out.println("Constructor Called");
+    }
+
+    // main function
+    public static void main(String[] args)
+    {
+        Main main = new Main();
+    }
+}
