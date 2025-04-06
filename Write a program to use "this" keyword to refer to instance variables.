@@ -1,0 +1,16 @@
+class Example {
+    int num;
+
+    Example(int num) {
+        this.num = num;  // `this` differentiates instance variable from parameter
+    }
+
+    void display() {
+        System.out.println("Number: " + num);
+    }
+
+    public static void main(String[] args) {
+        Example obj = new Example(10);
+        obj.display();
+    }
+}
