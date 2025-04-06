@@ -1,0 +1,17 @@
+class Test {
+    int num;
+
+    Test(int num) {
+        this.num = num;
+    }
+
+    void modify(Test t) {
+        t.num += 10;
+    }
+
+    public static void main(String[] args) {
+        Test obj = new Test(5);
+        obj.modify(obj);
+        System.out.println("Value after method call: " + obj.num); // Modified value 15
+    }
+}
